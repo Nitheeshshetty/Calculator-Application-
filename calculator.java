@@ -49,14 +49,17 @@ public class calculator extends JPanel implements ActionListener {
       else
         display.setText(display.getText() + cmd);
       calculating = false;
-    } else {
+    }
+    else {
       if (calculating) {
         if (cmd.equals("-")) {
           display.setText(cmd);
           calculating = false;
-        } else
+        } 
+        else
           operator = cmd;
-      } else {
+      } 
+      else {
         double x = Double.parseDouble(display.getText());
         calculate(x);
         operator = cmd;
